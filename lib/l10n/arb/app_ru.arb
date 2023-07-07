@@ -35,5 +35,41 @@
     "authError": "Ошибка аутентификацииe",
     "@authError": {
         "description": "Текст ошибки аутентификации"
+    },
+    "invalidLogin": "Неверный логин или имя пользователя",
+    "@invalidLogin": {
+        "description": "Неверный логин или имя пользователя"
+    },
+    "invalidPassword":"Неверный пароль",
+    "@invalidPassword": {
+        "description": "Неверный пароль"
+    },
+    "register": "Зарегистрироваться",
+    "@register": {
+        "description": "Зарегистрировать кнопку"
+    },
+    "authentication": "Аутентификация",
+    "@authentication": {
+        "description": "Заголовок страницы аутентификации"
+    },
+    "attention": "Внимание",
+    "@attention": {
+        "description": "Внимание! Заголовок"
+    },
+    "confirmation": "Подтверждение",
+    "@confirmation": {
+        "description": "Заголовок подтверждения"
+    },
+    "ruSure": "Вы уверены?",
+    "@ruSure": {
+        "description": "Текст подтверждения"
+    },
+    "yes": "Да",
+    "@yes": {
+        "description": "Вариант Да"
+    },
+    "no": "Нет",
+    "@no": {
+        "description": "Вариант Нет"
     }
 }

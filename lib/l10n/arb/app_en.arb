@@ -35,5 +35,41 @@
     "authError": "Authentication Failure",
     "@authError": {
         "description": "Error text of authentication failure"
+    },
+    "invalidLogin": "Invalid login or username",
+    "@invalidLogin": {
+        "description": "Invalid login or username"
+    },
+    "invalidPassword": "Invalid password",
+    "@invalidPassword": {
+        "description": "Invalid password"
+    },
+    "register": "Register",
+    "@register": {
+        "description": "Register buttor"
+    },
+    "authentication": "Authentication",
+    "@authentication": {
+        "description": "Authentication page title"
+    },
+    "attention": "Attention",
+    "@attention": {
+        "description": "Attention title"
+    },
+    "confirmation": "Confirmation",
+    "@confirmation": {
+        "description": "Confirmation title"
+    },
+    "ruSure": "Are you sure?",
+    "@ruSure": {
+        "description": "Confirmation body text"
+    },
+    "yes": "Yes",
+    "@yes": {
+        "description": "Yes option"
+    },
+    "no": "No",
+    "@no": {
+        "description": "No option"
     }
 }
