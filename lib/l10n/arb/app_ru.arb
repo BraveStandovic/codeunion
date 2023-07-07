@@ -1,0 +1,39 @@
+{
+    "@@locale": "ru",
+    "loginOrMail": "Логин или почта",
+    "@loginOrMail": {
+        "description": "Текст, отображаемый в текстовой форме страницы входаe"
+    },
+    "password": "Пароль",
+    "@password": {
+        "description": "Текст, отображаемый на странице TextForm входа"
+    },
+    "signIn": "Войдите",
+    "@signIn": {
+        "description": "Текст, отображаемый на странице кнопки входа"
+    },
+    "feed": "Лента",
+    "@feed": {
+        "description": "Текст значка ленты на BottomNavigationBar"
+    },
+    "map": "Карта",
+    "@map": {
+        "description": "Текст значка карты на BottomNavigationBar"
+    },
+    "favorite": "Избранное",
+    "@favorite": {
+        "description": "Текст значка избранного на BottomNavigationBar"
+    },
+    "profile": "Профиль",
+    "@profile": {
+        "description": "Текст значка профиля на BottomNavigationBar"
+    },
+    "logOut": "Выйти",
+    "@logOut": {
+        "description": "Текст значка кнопки Выход в теле Профиля"
+    },
+    "authError": "Ошибка аутентификацииe",
+    "@authError": {
+        "description": "Текст ошибки аутентификации"
+    }
+}

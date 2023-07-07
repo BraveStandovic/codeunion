@@ -1,7 +1,39 @@
 {
     "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
+    "loginOrMail": "Login or mail",
+    "@loginOrMail": {
+        "description": "Text shown in the TextForm of Login page"
+    },
+    "password": "Password",
+    "@password": {
+        "description": "Text shown in the TextForm of Login page"
+    },
+    "signIn": "Sing In",
+    "@signIn": {
+        "description": "Text shown in the Button of Login page"
+    },
+    "feed": "Feed",
+    "@feed": {
+        "description": "Text of Feed icon on BottomNavigationBar"
+    },
+    "map": "Map",
+    "@map": {
+        "description": "Text of Map icon on BottomNavigationBar"
+    },
+    "favorite": "Favorite",
+    "@favorite": {
+        "description": "Text of Favorite icon on BottomNavigationBar"
+    },
+    "profile": "Profile",
+    "@profile": {
+        "description": "Text of Profile icon on BottomNavigationBar"
+    },
+    "logOut": "Log out",
+    "@logOut": {
+        "description": "Text of Logout botton icon on Profile body"
+    },
+    "authError": "Authentication Failure",
+    "@authError": {
+        "description": "Error text of authentication failure"
     }
 }
