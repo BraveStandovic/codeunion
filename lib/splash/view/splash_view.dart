@@ -11,12 +11,15 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-        Assets.images.logo
-            .image(fit: BoxFit.contain)
-            .paddingAll(CODEUNIONSpacing.xxxxlg),
-        CircularProgressIndicator(),
-      ]),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Assets.images.logo
+              .image(fit: BoxFit.contain)
+              .paddingAll(CODEUNIONSpacing.xxxxlg),
+          const CircularProgressIndicator(),
+        ],
+      ),
     );
   }
 }

@@ -70,7 +70,7 @@ class _AppViewState extends State<AppView> {
       builder: (context, child) {
         return MaterialApp(
           theme: CODEUNIONTheme().lightTheme,
-          darkTheme: CODEUNIONTheme().darkTheme,
+          //darkTheme: CODEUNIONTheme().darkTheme,
           navigatorKey: _navigatorKey,
           localizationsDelegates: AppLocalizations.localizationsDelegates,
           supportedLocales: AppLocalizations.supportedLocales,

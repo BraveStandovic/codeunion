@@ -56,29 +56,7 @@ class ProfileView extends StatelessWidget {
                   .copyWith(color: CODEUNIONColors.red),
             ),
             onPressed: () async {
-              await showCupertinoDialog<bool>(
-                context: context,
-                builder: (BuildContext context) {
-                  return CupertinoAlertDialog(
-                    title: Text(l10.confirmation),
-                    content: Text(l10.ruSure),
-                    actions: [
-                      CupertinoDialogAction(
-                        child: Text(l10.no),
-                        onPressed: () {
-                          Navigator.pop(context, false); // Return false
-                        },
-                      ),
-                      CupertinoDialogAction(
-                        child: Text(l10.yes),
-                        onPressed: () {
-                          Navigator.pop(context, true); // Return true
-                        },
-                      ),
-                    ],
-                  );
-                },
-              ).then(
+              await onLogout(context, l10).then(
                 (value) {
                   if (value ?? false) {
                     context
@@ -91,6 +69,32 @@ class ProfileView extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+
+  Future<bool?> onLogout(BuildContext context, AppLocalizations l10) {
+    return showCupertinoDialog<bool>(
+      context: context,
+      builder: (BuildContext context) {
+        return CupertinoAlertDialog(
+          title: Text(l10.confirmation),
+          content: Text(l10.ruSure),
+          actions: [
+            CupertinoDialogAction(
+              child: Text(l10.no),
+              onPressed: () {
+                Navigator.pop(context, false); // Return false
+              },
+            ),
+            CupertinoDialogAction(
+              child: Text(l10.yes),
+              onPressed: () {
+                Navigator.pop(context, true); // Return true
+              },
+            ),
+          ],
+        );
+      },
     );
   }
 }

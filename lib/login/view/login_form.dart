@@ -40,23 +40,25 @@ class LoginForm extends StatelessWidget {
       },
       child: Align(
         alignment: const Alignment(0, -1 / 3),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            SizedBox(height: 175.h),
-            _UsernameInput(),
-            Divider(
-              height: 0,
-              color: CODEUNIONColors.brightGrey,
-              indent: CODEUNIONSpacing.lg.h,
-              endIndent: CODEUNIONSpacing.lg.h,
-            ),
-            _PasswordInput(),
-            SizedBox(height: CODEUNIONSpacing.lg2.h),
-            _LoginButton(),
-            SizedBox(height: CODEUNIONSpacing.lg.h),
-            _RegisterButton(),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              SizedBox(height: 175.h),
+              _UsernameInput(),
+              Divider(
+                height: 0,
+                color: CODEUNIONColors.brightGrey,
+                indent: CODEUNIONSpacing.lg.h,
+                endIndent: CODEUNIONSpacing.lg.h,
+              ),
+              _PasswordInput(),
+              SizedBox(height: CODEUNIONSpacing.lg2.h),
+              _LoginButton(),
+              SizedBox(height: CODEUNIONSpacing.lg.h),
+              _RegisterButton(),
+            ],
+          ),
         ),
       ),
     );
@@ -79,7 +81,7 @@ class _UsernameInput extends StatelessWidget {
           hintText: l10.loginOrMail,
           contentPadding: EdgeInsets.symmetric(
             horizontal: CODEUNIONSpacing.lg.h,
-            vertical: CODEUNIONSpacing.xlg.h,
+            vertical: CODEUNIONSpacing.lg2.h,
           ),
         );
       },
@@ -103,7 +105,7 @@ class _PasswordInput extends StatelessWidget {
           hintText: l10.password,
           contentPadding: EdgeInsets.symmetric(
             horizontal: CODEUNIONSpacing.lg.h,
-            vertical: CODEUNIONSpacing.xlg.h,
+            vertical: CODEUNIONSpacing.lg2.h,
           ),
         );
       },
