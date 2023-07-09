@@ -7,6 +7,9 @@ import 'package:formz/formz.dart';
 part 'login_event.dart';
 part 'login_state.dart';
 
+/// This class is a `Bloc` that manages the state of the login form.
+/// It uses [AuthenticationRepository] to login user with provided `username`
+/// and `password` and emit authentication status
 class LoginBloc extends Bloc<LoginEvent, LoginState> {
   LoginBloc({
     required AuthenticationRepository authenticationRepository,

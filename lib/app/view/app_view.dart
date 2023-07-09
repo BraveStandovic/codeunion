@@ -10,6 +10,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:user_repository/user_repository.dart';
 
+/// This class is the main entry point for the CodeUnion app.
+/// It creates a [RepositoryProvider] with an [AuthenticationRepository] and a
+/// [UserRepository]. It creates a BlocProvider with an [AuthenticationBloc]
+/// that uses the AuthenticationRepository and UserRepository.
 class App extends StatefulWidget {
   const App({super.key});
 
@@ -49,6 +53,11 @@ class _AppState extends State<App> {
   }
 }
 
+/// This class is the root widget for the CodeUnion app
+/// It then creates a [MaterialApp] widget with a [CODEUNIONTheme] theme.
+/// The listener function for the `BlocListener` checks the status of the
+/// [AuthenticationState] and pushes the appropriate page to the navigator
+/// depending on the status.
 class AppView extends StatefulWidget {
   const AppView({super.key});
 

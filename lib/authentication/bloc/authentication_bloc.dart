@@ -8,6 +8,10 @@ import 'package:user_repository/user_repository.dart';
 part 'authentication_event.dart';
 part 'authentication_state.dart';
 
+/// This class is a `Bloc` that manages the authentication state of the user.
+/// It uses [AuthenticationRepository] for adding [_AuthenticationStatusChanged]
+/// event acording the status `Stream` and [UserRepository] for getting the
+/// user's data from the UserRepository class.
 class AuthenticationBloc
     extends Bloc<AuthenticationEvent, AuthenticationState> {
   AuthenticationBloc({
@@ -42,7 +46,7 @@ class AuthenticationBloc
       case AuthenticationStatus.unauthenticated:
         return emit(const AuthenticationState.unauthenticated());
       case AuthenticationStatus.authenticated:
-        final user = await _tryGetUser();
+        final user = await _userRepository.getUser();
         return emit(
           user != null
               ? AuthenticationState.authenticated(user)
@@ -58,14 +62,5 @@ class AuthenticationBloc
     Emitter<AuthenticationState> emit,
   ) {
     _authenticationRepository.logOut();
-  }
-
-  Future<User?> _tryGetUser() async {
-    try {
-      final user = await _userRepository.getUser();
-      return user;
-    } catch (_) {
-      return null;
-    }
   }
 }

@@ -9,6 +9,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+/// This class is a stateless widget that displays the tabs for the home page.
+/// It uses the `BlocBuilder` widget to listen to the state of the [HomeCubit]
+/// and update the tabs accordingly.
 class HomeTabs extends StatelessWidget {
   const HomeTabs({super.key});
 
