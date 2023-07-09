@@ -29,6 +29,7 @@ class HomeTabs extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        key: const Key('home_BottomNavigationBar'),
         type: BottomNavigationBarType.fixed, // Fixed
         currentIndex: selectedTab.index,
         onTap: (index) {
